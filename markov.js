@@ -6,8 +6,11 @@ class MarkovMachine {
   /** build markov machine; read in text.*/
 
   constructor(text) {
-    let words = text.split(/[ \r\n]+/);
+    let words = text.split(/[ \r\n\.]+/);
     this.words = words.filter(c => c !== "");
+    this.words = this.words.map(word => {
+      if (word !=='I') return word.toLowerCase()
+    });
     this.chains = this.makeChains();
   }
 
@@ -88,5 +91,8 @@ class MarkovMachine {
   }
 }
 
-const mm = new MarkovMachine("the cat in the hat");
-mm.makeText(12)
+// const mm = new MarkovMachine();
+// mm.makeText()
+
+
+module.exports = { MarkovMachine };

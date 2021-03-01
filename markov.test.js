@@ -1,0 +1,13 @@
+const { MarkovMachine } = require('./markov');
+
+// const mm = new MarkovMachine(`Not in a box.
+// Not with a fox.
+// Not in a house.
+// Not with a mouse.
+// I would not eat them here or there.
+// I would not eat them anywhere.
+// I would not eat green eggs and ham.
+// I do not like them, Sam-I-am.`);
+// mm.makeText()
+
+console.log(MarkovMachine.getText())
