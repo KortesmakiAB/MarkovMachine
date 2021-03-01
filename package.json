@@ -1,0 +1,19 @@
+{
+  "name": "19_markovmachine",
+  "version": "1.0.0",
+  "description": "",
+  "main": "markov.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KortesmakiAB/MarkovMachine.git"
+  },
+  "author": "Aaron Brant",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KortesmakiAB/MarkovMachine/issues"
+  },
+  "homepage": "https://github.com/KortesmakiAB/MarkovMachine#readme"
+}
