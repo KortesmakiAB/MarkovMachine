@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/KortesmakiAB/MarkovMachine/issues"
   },
-  "homepage": "https://github.com/KortesmakiAB/MarkovMachine#readme"
+  "homepage": "https://github.com/KortesmakiAB/MarkovMachine#readme",
+  "dependencies": {
+    "axios": "^0.21.1"
+  }
 }
