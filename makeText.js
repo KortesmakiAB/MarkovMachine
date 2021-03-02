@@ -12,8 +12,8 @@ function useFileOrUrl(arg){
     if (arg === 'file') readFile(source);
     else if (arg ==='url') readUrl(source);
     else {
-        console.log('Error: Enter a valid input type, either "file" or "url".')
-        process.exit(1)
+        console.log('Error: Enter a valid input type, either "file" or "url".');
+        process.exit(1);
     }
 }
 
@@ -21,7 +21,8 @@ function readFile(path) {
     fs.readFile(path, 'utf8', (err, data) => {
         if (err){
             console.log('Error reading', process.argv[3]);
-            console.log(err)
+            console.log(err);
+            process.exit(1);
         }
         else callMarkovMakeText(data);
     });
@@ -36,7 +37,7 @@ async function readUrl(url) {
         console.log('Error fetching', process.argv[3]);
         const error = err.toJSON();
         console.log(err.stack);
-        process.exit(1)
+        process.exit(1);
     }
 }
 
